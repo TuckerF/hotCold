@@ -12,37 +12,36 @@
     clear: both;
 }
 
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 html {
 	width: 100%;
 	height: 100%;
-	background-color: #394264;
+	background-color: #A1A1A1;
 }
 
 body {
 	position: relative;
-	width: 98%;
-	height: 96%;
-	margin: 0.8em auto;
+	width: 96%;
+	height: 100%;
+	margin: 2% auto 2% auto;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	background-color: #1F253D;
+	background color: #496C91; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #496C91, black); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #496C91, black); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #496C91, black); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #496C91, black); /* Standard syntax */
+  	background-repeat: no-repeat;
+  	background-repeat: no-repeat;
 	text-align: center;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
 }
 
 a {
 	text-decoration: none;
 	color: black;
+	font-family: 'Rajdhani';
+
 }
 
 ul li {	
@@ -80,6 +79,7 @@ nav a {
 
 h1 {
 	font-weight: 900;
+	font-family: 'Rajdhani';
 	font-size: 3em;
 	padding: 0.8em;
 	color: #fff;
@@ -91,7 +91,8 @@ h1 {
 	width: 100%;
 	height: 100%;
 	color: #fff;
-	background: #e74c3c;
+	background: black;
+	border-radius: 1em;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -101,25 +102,27 @@ h1 {
 }
 
 .content {
-	color: #fff;
-	background: #e74c3c;
+	color: white;
+	background color: #496C91; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #97D2E6, #00171F); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #97D2E6, #00171F); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #97D2E6, #00171F); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #97D2E6, #00171F); /* Standard syntax */
 	position: relative;
 	height: auto;
 	width: 600px;
-	border-radius: 3px;
+	border-radius: .5em;
 	top: 15%;
 	margin: auto auto;
-	border: 1px solid rgba(0,0,0,0.1);
 }
 
 .content h3 {
 	margin: 0;
 	padding: 0.4em;
 	text-align: center;
+	font-family: "Rajdhani";
 	font-size: 2.4em;
 	font-weight: 300;
-	opacity: 0.8;
-	background: rgba(0,0,0,0.1);
 	border-radius: 3px 3px 0 0;
 }
 
@@ -155,12 +158,27 @@ h1 {
 }
 
 .content > div a {
-	font-size: 0.8em;
+	font-size: 1em;
+	color: white;
 	background: #1F253D;
-	color: #95a5a6;
 	padding: 0.5em 2em;
 	margin-bottom: 50px;
-	border-radius: 3px;
+	border-radius: .4em;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+}
+
+.content > div a:hover {
+	background-color: white;
+	color: #003B4F;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
 }
 
 /*---------------------------------------------------------------------------------
@@ -169,111 +187,91 @@ h1 {
 
 .game {
 	position: relative;
-	background-color: #394264;
+	background-color: white;
 	width: 380px;
 	height: 380px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
 	margin: 0 auto;
-
-	box-shadow: rgb(26, 31, 52) 1px 1px,
-    rgb(26, 31, 52) 2px 2px,
-    rgb(26, 31, 52) 3px 3px,
-    rgb(26, 31, 53) 4px 4px,
-    rgb(26, 32, 53) 5px 5px,
-    rgb(27, 32, 53) 6px 6px,
-    rgb(27, 32, 54) 7px 7px,
-    rgb(27, 32, 54) 8px 8px,
-    rgb(27, 32, 54) 9px 9px,
-    rgb(27, 33, 55) 10px 10px,
-    rgb(27, 33, 55) 11px 11px,
-    rgb(28, 33, 55) 12px 12px,
-    rgb(28, 33, 56) 13px 13px,
-    rgb(28, 34, 56) 14px 14px,
-    rgb(28, 34, 56) 15px 15px,
-    rgb(28, 34, 57) 16px 16px,
-    rgb(29, 34, 57) 17px 17px,
-    rgb(29, 34, 57) 18px 18px,
-    rgb(29, 35, 58) 19px 19px,
-    rgb(29, 35, 58) 20px 20px,
-    rgb(29, 35, 58) 21px 21px,
-    rgb(29, 35, 59) 22px 22px,
-    rgb(30, 35, 59) 23px 23px,
-    rgb(30, 36, 59) 24px 24px,
-    rgb(30, 36, 60) 25px 25px,
-    rgb(30, 36, 60) 26px 26px,
-    rgb(30, 36, 60) 27px 27px,
-    rgb(31, 37, 61) 28px 28px;
-
 }
 
 h2 {
 	margin: 0 auto;	
-	background: #cc324b;
-	padding: 1em 0.4em;
-	font-size: 1.5em;
+	background: white;
+	padding-top: 1em;
+	font-family: 'Rajdhani';
+	font-size: 2.3em;
 	font-weight: 400;
 	display: block;
 	line-height: 1em;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	color: #fff;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	color: black;
 }
 
 .game p {
-	margin-top: 0.5em;
-	font-size: 1.8em;
+	margin-top: 1.8em;
+	font-family: 'Rajdhani';
+	font-size: 2em;
 	padding-bottom: 0.5em;
 }
 
 #count {
-	color: #f39c12;
-	font-weight: 700;
-	font-size: 1.5em;
+	color: black;
+	font-weight: 400;
+	font-family: 'Rajdhani';
+	font-size: 1.2em;
 }
 
 input {
-	width: 300px;
-	height: 50px;
+	width: 230px;
+	height: 40px;
 	display: block;
-	padding: 0.8em 0;
+	font-family: 'Open Sans';
 	margin: 0.8em auto 0;
-	background: #50597b;
-	color: #fff;
-	border: solid 1px #1f253d;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	background: white;
+	color: black;
+	border: solid 1px #003B4F;
+	-webkit-border-radius: .4em;
+	-moz-border-radius: .4em;
+	border-radius: .4em;
 }
 
 input.button {
-	background: #1F253D;
-	color: #95a5a6;
-	font-size: 2em;
-	padding: 0.2em;
-	-webkit-transition: background 1s ease-in-out;
-	-moz-transition: background 1s ease-in-out;
-	-ms-transition: background 1s ease-in-out;
-	-o-transition: background 1s ease-in-out;
-	transition: background 1s ease-in-out;
+	background: white;
+	width: 160px;
+	border-radius: .4em;
+	color: black;
+	font-family: 'Open Sans';
+	font-size: 1.4em;
+	margin-top: 1.2em;
+	padding-bottom: 2px;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
 }
 
 input.button:hover {
-	background: #e64c65;
-	color: #fff;
-	-webkit-transition: background 1s ease-in-out;
-	-moz-transition: background 1s ease-in-out;
-	-ms-transition: background 1s ease-in-out;
-	-o-transition: background 1s ease-in-out;
-	transition: background 1s ease-in-out;
+	background: #003B4F;
+	color: white;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-ms-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
 	cursor: pointer;
 }
 
 input.text {
 	text-align: center;
-	padding: 0.2em;
-	font-size: 2em;
+	margin-top: 2em;
+	padding-top: 3px;
+	height: 40px;
+	font-size: 1.8em;
+	font-family: 'Open Sans';
 }
 
 input:focus {
@@ -281,23 +279,31 @@ input:focus {
 }
 
 ::-webkit-input-placeholder {
-   color: #95a5a6;
+   color: black;
+   font-family: 'Open Sans';
+   font-size: .8em;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #95a5a6;
+   color: black;
+   font-family: 'Open Sans';
+   font-size: .8em;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #95a5a6; 
+   color: black;
+   font-family: 'Open Sans';
+   font-size: .8em; 
 }
 
 :-ms-input-placeholder {  
-   color: #95a5a6; 
+   color: black;
+   font-family: 'Open Sans';
+   font-size: .8em; 
 }
 
 ul.guessBox {
-	height: 80px;
+	height: 65px;
 	margin: 10px auto 0;
 	background: #11a8ab;
 	padding: 0.5em;
